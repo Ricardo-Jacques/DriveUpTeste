@@ -1,4 +1,8 @@
 .main_footer {
+    color: white;
+}
+
+.main_footer {
     font-family: Helvetica, sans-serif;
     height: 30vh;
     display: flex;
