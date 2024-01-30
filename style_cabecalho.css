@@ -144,6 +144,8 @@ ul.caixa-bandeiras-ativa {
 @media screen and (max-device-width: 480px) {
     .icone-menu {
         display: block;
+        color: white;
+        background-color: rgba(102, 102, 102, 0.301);
         
     }
     header {
