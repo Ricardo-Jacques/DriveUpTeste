@@ -124,7 +124,7 @@ section.turismo {
     width: 100%;
     background-image: url("img/DriveUpIMG/foto_turismo.jpeg");
     background-size: cover;
-    font-size: 2.8vh;
+    font-size: 3.0vh;
 } 
 
 section.turismo > div {
@@ -138,7 +138,7 @@ section.turismo > div {
 section.turismo > div > h1 {
     color: #ffffff;
     width: 200px;
-    margin-top: 280px;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -226,14 +226,15 @@ img.cardflip {
     text-align: center;
     color: #ffffff;
     border-radius: 18px 18px 0px 0px;
-    font-family: 'Quintessential';
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .back p {
+    letter-spacing: -1px;
     text-align: justify;
     font-size: 1em;
     padding: 0px 18px 0px 18px;
-    font-family: 'Quintessential';
+    font-family: 'Titillium Web', sans-serif;
 }
   
 
@@ -266,6 +267,10 @@ img.cardflip {
 
     section.destinos {
         height: 1670px;
+    }
+
+    .back p {
+        font-size: 0.8em;
     }
 }
 
@@ -376,121 +381,15 @@ article {
     width: 28vh;
 }
 
-/*responsividade first main*/
-
-@media (max-width: 450px) {
-    .first_main {
-        color: white;
-        display: flex;
-        text-align: center;
-        height: 80vh;
-        background-image: url(img/img_main.avif);
-        background-size: cover;
-    }
-    
-    .text_main {
-        background-color: black;
-        opacity: 0.7;
-    }
-    
-    aside {
-        margin-left: 5vh;
-        margin-top: 32vh;
-        margin-right: 5vh;
-        width: 37vh;
-        font-size: 2vh;
-        text-align: center;
-        justify-content: center;
-        align-items: center;    
-    }
-    
-    p#turismo-texto {
-        margin-top: 2vh;
-    }
-
-}
-
-@media (max-width: 400px) {
-    .first_main {
-        color: white;
-        display: flex;
-        text-align: center;
-        height: 80vh;
-        background-image: url(img/img_main.avif);
-        background-size: cover;
-    }
-    
-    .text_main {
-        background-color: black;
-        opacity: 0.7;
-    }
-    
-    aside {
-        margin-left: 5vh;
-        margin-top: 32vh;
-        margin-right: 5vh;
-        width: 37vh;
-        font-size: 2vh;
-        text-align: center;
-        justify-content: center;
-        align-items: center;    
-    }
-    
-    p#turismo-texto {
-        margin-top: 2vh;
-    }
-}
-/*responsividade second main */
-
-@media (max-width: 450px) {
-    .second_main {
-        background-color: #1B2528;
-        color: white;
-        height: 75vh;
-        
-    }
-    
-    .top_secondmain{
-        display: flex;
-        padding: 5vh; 
-    }
-    
-    article {
-        text-align: center;
-    }
-    
-    .columns_main {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 0.001px;
-        text-align: center;
-        align-items: flex-start;
-        font-size: 1.5vh;
-        margin-left: 11vh;
-       
-    }
-    
-    .columns_main h1 {
-        margin-top: 1vh;
-    }
-    
-    .columns_main p {
-        margin-top: 15px;
-    }
-    
-    .columns {
-        height: 15vh;
-        width: 25vh;
-    }
-}
 
 /* Responsividade do seção turismo. */
 
 @media (max-width: 600px) {
     section.turismo > div {
-        height: 730px;
+        height: 900px;
         width: 420px;
+        background-image: url(img/DriveUpIMG/imagem_turismo_celular.jpeg);
+        background-size: cover;
     }
 
     section.turismo > div > h1 {
@@ -506,6 +405,8 @@ article {
     section.turismo > div {
         height: 730px;
         width: 400px;
+        background-image: url(img/DriveUpIMG/imagem_turismo_celular.jpeg);        
+        background-size: cover;
     }
     section.turismo > div > h1 {
         font-size: 1.8em;
@@ -522,6 +423,8 @@ article {
 
 @media screen and (max-device-width: 300px) {
     section.turismo > div {
+        background-image: url(img/DriveUpIMG/imagem_turismo_celular.jpeg);
+        background-size: cover;
         height: 730px;
         width: 280px;
     }

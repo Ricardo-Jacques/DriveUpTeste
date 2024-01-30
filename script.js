@@ -34,6 +34,43 @@ document.getElementById('saibaMaisBtn').addEventListener('click', function () {
   window.location.href = 'corporativo.html';
 });
 
+//script de parceiros
+
+document.addEventListener('DOMContentLoaded', function() {
+  var parceiros = document.querySelector('.parceiro');
+
+  parceiros.addEventListener('mouseover', function(event) {
+    var target = event.target;
+
+    if (target.classList.contains('parceiro')) {
+      var parceirosArray = Array.from(parceiros.children);
+
+      parceirosArray.forEach(function(parceiro) {
+        if (parceiro !== target) {
+          parceiro.style.flexGrow = '0.5';
+        }
+      });
+
+      target.style.flexGrow = '1.5';
+    }
+  });
+});
+
+//script whatsapp 
+
+window.addEventListener('load', function () {
+  var whatsapp = document.getElementById('whatsapp');
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+  // Ajusta a posição inicial com base na altura da janela
+  whatsapp.style.bottom = (windowHeight < 600) ? '10px' : '20px';
+
+  // Atualiza a posição quando a janela for redimensionada
+  window.addEventListener('resize', function () {
+      var newWindowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      whatsapp.style.bottom = (newWindowHeight < 600) ? '10px' : '20px';
+  });
+});
 
 /* Menu dos idiomas */
 function menuIdiomas () {

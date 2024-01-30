@@ -146,11 +146,14 @@ ul.caixa-bandeiras-ativa {
         display: block;
         
     }
+    header {
+        height: 10vh;
+    }
 
     nav {
         display: block;
         position: absolute;
-        top: 15vh;
+        top: 10vh;
         right: 0; 
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
@@ -159,7 +162,7 @@ ul.caixa-bandeiras-ativa {
     nav.mobile {
         display: block;
         position: absolute;
-        top: 15vh;
+        top: 10vh;
         right: 0;
         width: 50vw;
         height: 100vh;
@@ -293,12 +296,12 @@ a {
 }
 @media screen and (max-width: 500px) {
     .whatsapp {
-        left: 87%;
+        left: 84%;
     }
 }
 
 @media screen and (max-width: 400px) {
     .whatsapp {
-        left: 87%;
+        left: 82%;
     }
 }
