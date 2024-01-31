@@ -62,9 +62,11 @@ function TesteIOS() {
   return /iPhone|iPad|iPod/.test(navigator.userAgent);
 }
 
-if (TesteIOS() === true) {
+if (TesteIOS()) {
   var whatsapp = querySelector(".whatsapp");
   whatsapp.style.top = "80vh";
+} else {
+  return 0;
 }
 
 /* Menu dos idiomas */
