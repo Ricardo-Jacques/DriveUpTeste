@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
 //script whatsapp para Iphone
 
 function TesteIOS() {
-  return /iPhone|iPad|iPod/.test(navigator.userAgent);
+  return /Mac|MacIntel|iPhone|iPad|iPod/.test(navigator.userAgent);
 }
 
 if (TesteIOS()) {
-  var whatsapp = querySelector(".whatsapp");
+  var whatsapp = document.querySelector(".whatsapp");
   whatsapp.style.top = "70vh";
 } else {
   return 0;
