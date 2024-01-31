@@ -56,21 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//script whatsapp 
+//script whatsapp para Iphone
 
-window.addEventListener('load', function () {
-  var whatsapp = document.getElementById('whatsapp');
-  var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+function TesteIOS() {
+  return /iPhone|iPad|iPod/.test(navigator.userAgent);
+}
 
-  // Ajusta a posição inicial com base na altura da janela
-  whatsapp.style.bottom = (windowHeight < 600) ? '10px' : '20px';
-
-  // Atualiza a posição quando a janela for redimensionada
-  window.addEventListener('resize', function () {
-      var newWindowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      whatsapp.style.bottom = (newWindowHeight < 600) ? '10px' : '20px';
-  });
-});
+if (TesteIOS() === true) {
+  var whatsapp = querySelector(".whatsapp");
+  whatsapp.style.top = "80vh";
+}
 
 /* Menu dos idiomas */
 function menuIdiomas () {
