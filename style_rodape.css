@@ -1,5 +1,10 @@
 .main_footer {
+    color: white !important;
+}
+
+.main_footer > a {
     color: white;
+    text-decoration: none;
 }
 
 .main_footer {
