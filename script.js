@@ -64,7 +64,7 @@ function TesteIOS() {
 
 if (TesteIOS()) {
   var whatsapp = querySelector(".whatsapp");
-  whatsapp.style.top = "80vh";
+  whatsapp.style.top = "70vh";
 } else {
   return 0;
 }
