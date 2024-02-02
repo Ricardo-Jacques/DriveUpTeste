@@ -6,7 +6,7 @@
 /* Estilização cabeçalho */
 header {
     background-color: #0000007a;
-    height: 15vb;
+    height: 15vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,8 +30,6 @@ nav > ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    max-width: 460px;
-    min-width: 150px;
 }
 
 ul > li {
@@ -165,8 +163,7 @@ ul.caixa-bandeiras-ativa {
         display: block;
         position: absolute;
         top: 10vh;
-        right: 0;
-        width: 50vw;
+        width: 52%;
         height: 100vh;
         background-color: #23232e;
         flex-direction: column;

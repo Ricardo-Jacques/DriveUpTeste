@@ -56,19 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//script whatsapp para Iphone
-
-function TesteIOS() {
-  return /Mac|MacIntel|iPhone|iPad|iPod/.test(navigator.userAgent);
-}
-
-if (TesteIOS()) {
-  var whatsapp = document.querySelector(".whatsapp");
-  whatsapp.style.top = "70vh";
-} else {
-  return 0;
-}
-
 /* Menu dos idiomas */
 function menuIdiomas () {
   var b = document.getElementById("bandeira-brasil");
