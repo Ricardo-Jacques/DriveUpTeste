@@ -395,11 +395,13 @@ article {
      }
 }
 
-@media screen and (max-device-width: 400px) {
+@media (max-device-width: 480px) {
     section.turismo > div {
         max-width: 100%;
     }
+}
 
+@media screen and (max-device-width: 400px) {
     section.turismo > div > h1 {
         font-size: 1.4em;
     }
