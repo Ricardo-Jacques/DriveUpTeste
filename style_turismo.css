@@ -386,6 +386,11 @@ article {
 /* Responsividade do seção turismo. */
 
 @media (max-width: 600px) {
+    section.turismo {
+        background-image: url("img/DriveUpIMG/imagem_turismo_celular.jpeg");
+        background-size: cover;
+    }
+
     section.turismo > div > h1 {
         font-size: 1em;
      }
