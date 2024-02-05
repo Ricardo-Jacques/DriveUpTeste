@@ -142,7 +142,6 @@ ul.caixa-bandeiras-ativa {
 @media screen and (max-device-width: 480px) {
     .icone-menu {
         display: block;
-        color: white;
         background-color: rgba(102, 102, 102, 0.301);
         
     }
@@ -165,7 +164,7 @@ ul.caixa-bandeiras-ativa {
         top: 10vh;
         width: 52%;
         height: 100vh;
-        background-color: #23232e;
+        background-color: #00000098;
         flex-direction: column;
         align-items: center;
         transform: translateX(0);
@@ -182,6 +181,10 @@ ul.caixa-bandeiras-ativa {
         margin-left: auto;
         margin-right: auto;
         margin-top: 45px;
+    }
+
+    nav > ul > li > a {
+        color: #ffffff;
     }
 
     nav > ul > button.idioma {
