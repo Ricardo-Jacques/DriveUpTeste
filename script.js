@@ -56,6 +56,60 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.coments_cards');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
+
+  // Defina o número de slides visíveis com base na largura da tela
+  let visibleSlides = (window.innerWidth < 750) ? 1 : 4;
+
+  // Exibe os slides iniciais
+  showSlide();
+
+  // Adiciona os ouvintes de eventos aos botões de navegação
+  document.getElementById('prevButton').addEventListener('click', function () {
+    currentIndex = (currentIndex > 0) ? currentIndex - visibleSlides : totalSlides - visibleSlides;
+    showSlide();
+  });
+
+  document.getElementById('nextButton').addEventListener('click', function () {
+    currentIndex = (currentIndex < totalSlides - visibleSlides) ? currentIndex + visibleSlides : 0;
+    showSlide();
+  });
+
+  // Função para exibir os slides atuais
+  function showSlide() {
+    for (let i = 0; i < totalSlides; i++) {
+      slides[i].style.display = 'none';
+    }
+
+    for (let i = 0; i < visibleSlides && currentIndex + i < totalSlides; i++) {
+      const index = (currentIndex + i) % totalSlides;  // Ajuste para obter o índice correto, considerando o carrossel contínuo
+      slides[index].style.display = 'block';
+    }
+  }
+});
+
+// Atualiza o número de slides visíveis ao redimensionar a janela
+window.addEventListener('resize', function () {
+  visibleSlides = (window.innerWidth < 750) ? 1 : 4;
+  showSlide();
+});
+
+// Atualiza o número de slides visíveis ao redimensionar a janela
+window.addEventListener('resize', function () {
+  visibleSlides = (window.innerWidth < 750) ? 1 : 4;
+  showSlide();
+});
+
+// Atualiza o número de slides visíveis ao redimensionar a janela
+window.addEventListener('resize', function () {
+  visibleSlides = (window.innerWidth < 750) ? 1 : 4;
+  showSlide();
+});
+
 /* Menu dos idiomas */
 function menuIdiomas () {
   var b = document.getElementById("bandeira-brasil");
